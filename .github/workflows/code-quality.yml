@@ -24,6 +24,6 @@ jobs:
       - name: Download npm Dependencies
         run: npm install
       - name: Run ESLint
-        run: npx eslint ./**
+        run: npm run lint
       - name: Run Prettier
         run: npx prettier . --write
