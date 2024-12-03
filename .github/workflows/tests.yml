@@ -1,24 +1,24 @@
-name: Module & Integration Testing
-
-on:
-  workflow_run:
-    workflows: [Code Quality Checks]
-    types:
-      - completed
-    push:
-      branches-ignore: []
-    pull_request:
-      branches-ignore: []
-
-jobs:
-  module-testing:
-    name: Module & Integration Tests
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout/@v4
-        with:
-          fetch-depth: 0
-      - name: Module Tests
-        run:
-      - name: Integration Tests
-        run:
+#name: Module & Integration Testing
+#
+#on:
+#  workflow_run:
+#    workflows: [Code Quality Checks]
+#    types:
+#      - completed
+#    push:
+#      branches-ignore: []
+#    pull_request:
+#      branches-ignore: []
+#
+#jobs:
+#  module-testing:
+#    name: Module & Integration Tests
+#    runs-on: ubuntu-latest
+#    steps:
+#      - uses: actions/checkout/@v4
+#        with:
+#          fetch-depth: 0
+#      - name: Module Tests
+#        run:
+#      - name: Integration Tests
+#        run:
