@@ -27,6 +27,7 @@ export const UserProvider = ({ children }) => {
     if (!token) return;
 
     try {
+      // eslint-disable-next-line no-undef
       const response = await fetch(`${process.env.REACT_APP_AUTH}/current`, {
         headers: {
           Authorization: `Bearer ${token}`,
@@ -87,6 +88,7 @@ export const UserProvider = ({ children }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
+        // eslint-disable-next-line no-undef
         `${process.env.REACT_APP_AUTH}/request-admin`,
         {
           method: "POST",
@@ -122,6 +124,7 @@ export const UserProvider = ({ children }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
+        // eslint-disable-next-line no-undef
         `${process.env.REACT_APP_AUTH}/admin-requests/status?userId=${userId}`,
         {
           headers: {
@@ -149,6 +152,7 @@ export const UserProvider = ({ children }) => {
   const updateUser = async (updatedData) => {
     try {
       const token = localStorage.getItem("token");
+      // eslint-disable-next-line no-undef
       const response = await fetch(`${process.env.REACT_APP_AUTH}/current`, {
         method: "PUT",
         headers: {

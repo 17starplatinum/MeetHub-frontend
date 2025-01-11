@@ -8,7 +8,7 @@ import { FAQPage } from "./pages/FAQPage";
 import { UserContext } from "./UserContext";
 
 function App() {
-  const { user, role, logout, saveCurrentPath } = useContext(UserContext);
+  const { saveCurrentPath } = useContext(UserContext);
   const location = useLocation();
 
   useEffect(() => {
