@@ -1,3 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --MeetHubDark: #0b0b0b;
+  --MeetHubGray: #272727;
+  --MeetHubYellow: #fff13c;
+  --MeetHubPurple: #6158ff;
+  --MeetHubOrange: #ffd13c;
+  --MeetHubViolet: #a04cff;
+}
+
 .App {
   text-align: center;
 }

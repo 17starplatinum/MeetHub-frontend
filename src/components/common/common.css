@@ -1,0 +1,42 @@
+@import "../../styles/FontRules.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --MeetHubDark: #0b0b0b;
+  --MeetHubGray: #272727;
+  --MeetHubYellow: #fff13c;
+  --MeetHubPurple: #6158ff;
+  --MeetHubOrange: #ffd13c;
+  --MeetHubViolet: #a04cff;
+}
+
+.meet-1 {
+  font-size: 2.5vw;
+  color: var(--MeetHubPurple);
+}
+
+.meet-2 {
+  font-size: 2.5vw;
+  color: var(--MeetHubViolet);
+}
+
+.hub-1 {
+  font-size: 2.5vw;
+  color: var(--MeetHubYellow);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.hub-2 {
+  font-size: 2.5vw;
+  color: var(--MeetHubOrange);
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+
+.relative {
+  font-family: "Montserrat", sans-serif;
+}

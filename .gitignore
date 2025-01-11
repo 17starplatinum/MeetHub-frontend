@@ -1,6 +1,10 @@
 # Compiled class file
 *.class
 
+# Jetbrains IDE files
+.idea
+.idea/**
+
 # Log file
 *.log
 
