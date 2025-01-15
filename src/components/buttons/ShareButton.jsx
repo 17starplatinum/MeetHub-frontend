@@ -2,6 +2,7 @@ import * as React from "react";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
+// eslint-disable-next-line no-unused-vars
 export default function ShareButton({ url = "#" }) {
   const [display, setDisplay] = useState(false);
 
