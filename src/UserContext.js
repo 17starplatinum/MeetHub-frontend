@@ -5,6 +5,7 @@ export const UserContext = createContext();
 
 // eslint-disable-next-line react/prop-types
 export const UserProvider = ({ children }) => {
+  /* eslint-disable no-undef */
   const [user, setUser] = useState(null);
   const [role, setRole] = useState(null);
   const [requestStatus, setRequestStatus] = useState(null);
@@ -88,7 +89,6 @@ export const UserProvider = ({ children }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        // eslint-disable-next-line no-undef
         `${process.env.REACT_APP_AUTH}/request-admin`,
         {
           method: "POST",
@@ -124,7 +124,6 @@ export const UserProvider = ({ children }) => {
     try {
       const token = localStorage.getItem("token");
       const response = await fetch(
-        // eslint-disable-next-line no-undef
         `${process.env.REACT_APP_AUTH}/admin-requests/status?userId=${userId}`,
         {
           headers: {
@@ -152,7 +151,6 @@ export const UserProvider = ({ children }) => {
   const updateUser = async (updatedData) => {
     try {
       const token = localStorage.getItem("token");
-      // eslint-disable-next-line no-undef
       const response = await fetch(`${process.env.REACT_APP_AUTH}/current`, {
         method: "PUT",
         headers: {
