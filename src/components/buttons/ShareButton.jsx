@@ -21,7 +21,7 @@ export default function ShareButton({ url = "#" }) {
         />
         Поделиться
       </button>
-      <SocialMediaCard url={url} display={display} />
+      {/*<SocialMediaCard url={url} display={display} />*/}
     </>
   );
 }
