@@ -22,7 +22,7 @@ export function EventEnd() {
           Теперь вы можете чувствовать себя как полноценный участник или
           грамотный организатор!
         </p>
-        <ReadyButton />
+        <ReadyButton path={"/login"} />
       </div>
     </section>
   );

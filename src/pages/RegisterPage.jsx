@@ -21,7 +21,7 @@ export function RegisterPage() {
             <div className="flex flex-col w-6/12 max-md:ml-0 max-md:w-full">
               <img
                 loading="lazy"
-                src="https://cdn.builder.io/api/v1/image/assets/TEMP/980a98736b1151b84997d94846f01ebf0a8744b15230e9714fe3b1311723dcce?placeholderIfAbsent=true&apiKey=889eb349157947aaa492252e943a294a"
+                src="/assets/images/event-image.jpg"
                 alt="Login illustration"
                 className="object-contain grow w-full aspect-[0.85] rounded-[35px] shadow-[0px_4px_4px_rgba(0,0,0,0.25)] max-md:mt-10 max-md:max-w-full"
               />

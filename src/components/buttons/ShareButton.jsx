@@ -1,7 +1,6 @@
 import * as React from "react";
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { SocialMediaCard } from "../cards/SocialMediaCard";
 
 export default function ShareButton({ url = "#" }) {
   const [display, setDisplay] = useState(false);

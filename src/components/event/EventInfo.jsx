@@ -10,7 +10,7 @@ function EventInfo() {
 
   const isLoaded = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyD4qqI_AY6PeZ1R8pmA5cx9l_IfDYquWbw",
+    googleMapsApiKey: process.env.REACT_APP_GOOGLE_MAPS_API_KEY,
   });
 
   const [map, setMap] = React.useState(null);
@@ -22,7 +22,6 @@ function EventInfo() {
     setMap(map);
   }, []);
 
-  // 1000 bottles of baby oil
   return (
     <div className="caption event-info flex items-center h-auto w-full border-4 border-yellow-300 bg-purple-500 rounded-3xl">
       <div className="map w-1/2"></div>
