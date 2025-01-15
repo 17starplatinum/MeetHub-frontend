@@ -1,7 +1,7 @@
 import * as React from "react";
 import { useEffect, useState } from "react";
 import { Header } from "../components/common/Header";
-import EventHero from "../components/cards/EventHero";
+import { EventHero } from "../components/cards/EventHero";
 import { EventEnd } from "../components/cards/EventEnd";
 import { Footer } from "../components/common/Footer";
 import { descriptions } from "../components/cards/internals/descriptions/Descriptions";
@@ -22,7 +22,7 @@ export function HelloPage() {
           alt=""
           className="object-cover absolute inset-0 size-full opacity-20"
         />
-        <div className="flex sticky top-0 flex-col text-4xl bg-white max-md:max-w-full z-10">
+        <div className="flex sticky top-0 flex-col bg-white max-md:max-w-full z-10">
           <Header account={true} />
         </div>
         {desc.map((description, index) => (

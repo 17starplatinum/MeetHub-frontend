@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import AccountButton from "../buttons/AccountButton";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 
 export function RegisterForm() {
+  /* eslint-disable no-unused-vars */
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [email, setEmail] = useState("");
@@ -117,6 +118,7 @@ export function RegisterForm() {
         >
           Войти
         </button>
+        {error}
       </div>
     </form>
   );

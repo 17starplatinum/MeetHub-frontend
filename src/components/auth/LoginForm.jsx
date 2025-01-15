@@ -1,10 +1,9 @@
-import { useNavigate } from "react-router-dom";
 import AccountButton from "../buttons/AccountButton";
-import "./form.css";
+import "../../index.css";
+import { useNavigate } from "react-router";
 
 export function LoginForm() {
-  let navigate = useNavigate();
-
+  const navigate = useNavigate();
   return (
     <form className="flex flex-col self-stretch my-auto w-full text-2xl text-white max-md:mt-10 max-md:max-w-full">
       <h1 className="main self-center font-bold leading-none text-center">

@@ -15,8 +15,8 @@ const filterInputs = [
 
 function Filter() {
   return (
-    <div className="flex flex-col pb-96 bg-neutral-950 max-w-[335px] rounded-[35px]">
-      <div className="flex z-10 flex-col justify-center px-2.5 pt-4 pb-8 w-full bg-[color:var(--,#0B0B0B)] rounded-[30px]">
+    <div className="flex flex-col bg-neutral-950 max-w-[335px] rounded-[35px] border-2 border-yellow-300 pb-3">
+      <div className="flex z-10 flex-col justify-center px-2.5 pt-4 pb-4 w-full bg-[#0B0B0B] rounded-[33px]">
         <div className="flex flex-col justify-center items-center w-full rounded-3xl shadow-lg">
           <div className="flex gap-2 items-end max-w-full text-lg font-semibold leading-none text-white whitespace-nowrap w-[277px]">
             <img
@@ -27,7 +27,7 @@ function Filter() {
             />
             <div>Фильтр</div>
           </div>
-          <div className="flex flex-col mt-6 max-w-full w-[295px]">
+          <div className="flex flex-col mt-6 max-w-full w-[295px] text-white">
             {filterInputs.map((input, index) => (
               <FilterInput
                 key={index}
@@ -43,4 +43,4 @@ function Filter() {
   );
 }
 
-export default FilterContainer;
+export default Filter;

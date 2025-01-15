@@ -14,7 +14,10 @@ export function FAQPage() {
         alt=""
         className="object-fill absolute inset-0 size-full opacity-10 -z-30"
       />
-      <Header />
+      <div className="flex flex-col bg-white z-10">
+        <Header account={true} />
+      </div>
+
       <div className="flex flex-col w-full font-bold text-white max-md:max-w-[800px]">
         <div className="content text-5xl text-center mt-10 max-md:max-w-full max-md:text-4xl">
           Ответы на часто задаваемые вопросы

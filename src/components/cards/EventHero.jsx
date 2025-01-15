@@ -1,10 +1,10 @@
 import HeroContent from "./internals/HeroContent";
 import HeroImage from "./internals/HeroImage";
 import HeroCaption from "./internals/HeroCaption";
-import ActionButton from "../buttons/ActionButton";
+import { ActionButton } from "../buttons/ActionButton";
 import PropTypes from "prop-types";
 
-function EventHero({
+export function EventHero({
   idName,
   nextTo,
   caption,
@@ -34,7 +34,9 @@ function EventHero({
                 className={`flex flex-col ${imageCardPosition === "left" ? "pl-14" : "pr-14"} mt-12 w-full max-md:pl-5 max-md:mt-10 max-md:max-w-full`}
               >
                 <HeroContent desc={description} position={imageCardPosition} />
-                <ActionButton scrollTo={nextTo} text={buttonText} />
+                <div className="flex absolute justify-center w-full -bottom-48">
+                  <ActionButton scrollTo={nextTo} text={buttonText} />
+                </div>
               </div>
             </div>
           </div>
@@ -53,5 +55,3 @@ EventHero.propTypes = {
   imagePosition: PropTypes.string,
   description: PropTypes.string,
 };
-
-export default EventHero;

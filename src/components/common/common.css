@@ -1,4 +1,4 @@
-@import "../../styles/FontRules.css";
+@import "../../FontRules.css";
 
 @tailwind base;
 @tailwind components;
@@ -15,11 +15,13 @@
 
 .meet-1 {
   font-size: 2.5vw;
+  font-family: "Source Sans Pro", sans-serif;
   color: var(--MeetHubPurple);
 }
 
 .meet-2 {
   font-size: 2.5vw;
+  font-family: "Source Sans Pro", sans-serif;
   color: var(--MeetHubViolet);
 }
 
