@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import "../../../FontRules.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .content {
+    font-family: "Montserrat", serif;
+  }
+
+  .caption {
+    font-family: "Source Sans Pro", sans-serif;
+  }
+}
